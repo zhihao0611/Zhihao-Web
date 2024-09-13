@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhihao Huang - Research CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .header .logo {
+            width: 120px;
+            height: 120px;
+        }
+        header h1 {
+            font-size: 36px;
+            color: #1e90ff;
+            text-align: center;
+            flex: 1;
+        }
+        header p {
+            margin: 5px 0;
+            color: #777;
+            text-align: center;
+        }
+        header .contact-info {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-heading {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 2px solid #1e90ff;
+            padding-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills-list li {
+            flex: 0 0 50%;
+            list-style: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #777;
+        }
+        footer a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="photo.jpg" alt="Zhihao Huang">
+            <h1>Zhihao Huang</h1>
+            <img class="logo" src="nwu_logo.png" alt="Northwestern University Logo">
+        </div>
+
+        <header>
+            <p>Master’s Student, Northwestern University</p>
+            <p>Email: <a href="mailto:zhihaohuang2022@u.northwestern.edu">zhihaohuang2022@u.northwestern.edu</a></p>
+            <p>Phone: 773-739-4528</p>
+            <div class="contact-info">
+                <a href="#"><i class="fas fa-linkedin"></i> LinkedIn</a> | 
+                <a href="#"><i class="fas fa-github"></i> GitHub</a>
+            </div>
+        </header>
+
+        <section class="section interests">
+            <h2 class="section-heading">Interests</h2>
+            <ul>
+                <li>Video Processing</li>
+                <li>Inverse Problem</li>
+                <li>Pseudo-inverse Simulation</li>
+                <li>Generative Networks</li>
+                <li>Semi/Unsupervised Learning</li>
+            </ul>
+        </section>
+
+        <section class="section education">
+            <h2 class="section-heading">Education</h2>
+            <ul>
+                <li><strong>M.S. in Electrical Engineering (GPA: 3.87/4.00)</strong>, Northwestern University, 2022–2024</li>
+                <li><strong>B.E. in Industrial Automation (GPA: 3.53/4.00)</strong>, Ocean University of China, 2018–2022</li>
+            </ul>
+        </section>
+
+        <section class="section publications">
+            <h2 class="section-heading">Publications</h2>
+            <ul>
+                <li>Huang, Z., Lopez-Tapia, S., & Katsaggelos, A. "VDPI: Video Deblurring with Pseudo-inverse Modeling." Submitted to <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, (2024). <a href="https://arxiv.org/abs/2409.00777">[arXiv link]</a></li>
+            </ul>
+        </section>
+
+        <section class="section research">
+            <h2 class="section-heading">Research & Contributions</h2>
+            
+            <h3>Video Deblurring with Pseudo-inverse Modeling</h3>
+            <p>Northwestern University, 08/2023 - 08/2024</p>
+            <p><strong>Advisor:</strong> <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/katsaggelos-aggelos.html">Aggelos K. Katsaggelos, Ph.D.</a></p>
+            <p>
+                I developed a novel method for video deblurring by integrating pseudo-inverse estimation with deep learning models. This approach modeled the blurring process and used pseudo-inverse with a NAFNet-based architecture, enhancing deep learning models' performance in video deblurring tasks. It was tested on several datasets, including GoPro, DVD, and REDS, achieving state-of-the-art results in perceptual quality and temporal consistency.
+            </p>
+            <ul>
+                <li class="custom-list-item">Proposed a novel estimation method for the pseudo-inverse, which is applicable to a wide range of image and video reconstruction tasks.</li>
+                <li class="custom-list-item">Integrated pseudo-inverse estimation into a variational deep-learning model, improving adaptability to various types of blurs.</li>
+                <li class="custom-list-item">Achieved significant improvements in PSNR, SSIM, STRRED, and LPIPS across multiple datasets, demonstrating robustness in handling severe blur.</li>
+                <li class="custom-list-item">Conducted extensive experiments to validate each component's effectiveness. The pseudo-inverse module’s low parameter count suggests potential for transferability to other image reconstruction tasks.</li>
+            </ul>
+
+            <h3>Kidney Transplant Grading from Whole-Slide Images</h3>
+            <p>Northwestern University, 01/2023 - 09/2023</p>
+            <p><strong>Advisor:</strong> <a href="https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=44206">Lee Cooper, Ph.D.</a></p>
+            <p>
+                I developed ViT and Swin-Transformer from scratch to analyze kidney Whole-Slide Images (WSIs), which contain billions of pixels, for predicting post-transplant survival rates. Using a dataset of over 800 WSIs, we significantly improved Banff Classification performance over traditional CNN models. Additionally, I created a custom categorical focal loss function to address imbalanced test set issues, reducing the gap between specificity and sensitivity.
+            </p>
+            <ul>
+                <li class="custom-list-item">Developed Swin-Transformer from scratch, reducing parameters from 110M (ViT) to 4M while improving performance.</li>
+                <li class="custom-list-item">Tackled the challenge of adapting the Swin-Transformer to accommodate different input shapes.</li>
+                <li class="custom-list-item">Studied extensive code in the lab’s library (over 3000 lines) and streamlined complex input/output integration between the Swin-Transformer and the I/O system.</li>
+                <li class="custom-list-item">Conducted multiple experiments to assess model overfitting, primarily attributed to the imbalanced test set.</li>
+                <li class="custom-list-item">Created a user-friendly implementation of the novel categorical focal loss package, improving the model's handling of imbalanced datasets.</li>
+            </ul>
+
+            <h3>Collaborative Underwater Image Enhancement and Super-Resolution</h3>
+            <p>Ocean University of China, 05/2020 - 05/2022</p>
+            <p><strong>Advisor:</strong> <a href="https://ieeexplore.ieee.org/author/37085432738">Kunqian Li, Ph.D.</a></p>
+            <p>
+                I proposed a unified end-to-end deep network for joint underwater image enhancement and super-resolution. To fully exploit the supervision information from scene-associated images, I introduced a multi-stage mutual transmission strategy of associated features for collaborative learning. This approach led to significant improvements in the clarity and resolution of underwater images.
+            </p>
+            <ul>
+                <li class="custom-list-item">Developed and integrated encoder-decoder structures into the fusion-based enhancement module, ensuring consistency and improved performance.</li>
+                <li class="custom-list-item">Designed, linked, and debugged the enhancement and super-resolution networks, optimizing network fusion and model performance through experiments and ablation tests.</li>
+                <li class="custom-list-item">Strengthened loss constraints and improved GAN performance, leading to better convergence and image quality.</li>
+                <li class="custom-list-item">Systematically analyzed underwater images and created a new dataset, preparing figures and tables for a comprehensive comparison of network results.</li>
+            </ul>
+        </section>
+
+        <section class="section skills">
+            <h2 class="section-heading">Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Programming Languages:</strong> Python, C, C++, C#, LATEX, MATLAB, Verilog, VHDL, SQL</li>
+                <li><strong>ML Libraries:</strong> TensorFlow, Keras, PyTorch, Scikit-learn, NumPy, SciPy, Pandas, Matplotlib</li>
+                <li><strong>Operating Systems:</strong> UNIX, Windows</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Zhihao Huang - <a href="mailto:zhihaohuang2022@u.northwestern.edu">zhihaohuang2022@u.northwestern.edu</a></p>
+        </footer>
+    </div>
+</body>
+</html>
